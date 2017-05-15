@@ -9,6 +9,10 @@
     <%end%>
     
 <hr>
+     <% if @showevent.name=="음악을 이루다,본무대" %>
+     <%= image_tag ("event/musicstage.jpg"), :class => "event_page_image" %>
+     <% else %>
      <%= image_tag ("event/#{@showevent.name}.jpg"), :class => "event_page_image" %>
+     <% end %>
     
 </div>
