@@ -12,6 +12,8 @@ class HomeController < ApplicationController
     
     @num = 1
     
+    # 우선 동작하게
+    # @fests = Fest.where("date = ? and place = ? ", 1, @building)
     
   end
 
